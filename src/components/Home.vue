@@ -7,7 +7,7 @@
             </div>
             <el-button type="primary" @click="logOut">退出</el-button>
         </el-header>
-        <el-container>
+        <el-container class="home-main">
             <el-aside :width="isCollapse ? '64px' : '200px'">
                 <div class="toggle-button" @click="toogleCollapse">|||</div>
                 <!--左侧菜单项-->
@@ -94,9 +94,11 @@ export default {
 </script>
 <style lang='less' scoped>
 .home-container {
-    height: 100%;
+  height: 100%;
 }
-
+// .home-main{
+//     height: 600px;
+// }
 .el-header {
     background-color: #373d41;
     display: flex;
