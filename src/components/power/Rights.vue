@@ -10,9 +10,9 @@
         <el-card class="box-card">
             <el-table :data="rightsList" border stripe>
                 <el-table-column type="index" label="序号"></el-table-column>
-                <el-table-column prop="authName" label="权限名称" width="180">
+                <el-table-column prop="authName" label="权限名称">
                 </el-table-column>
-                <el-table-column prop="path" label="路径" width="180">
+                <el-table-column prop="path" label="路径">
                 </el-table-column>
                 <el-table-column prop="level" label="权限等级">
                     <template slot-scope='scope'>
@@ -22,7 +22,7 @@
                     </template>
                 </el-table-column>
             </el-table>
-            
+            <!--分页-->
         </el-card>
     </div>
 </template>
@@ -47,15 +47,16 @@ export default {
             //成功
             this.rightsList = res.data;
         },
-        handleSizeChange(val) {
-            console.log(`每页 ${val} 条`);
-        },
-        handleCurrentChange(val) {
-            console.log(`当前页: ${val}`);
-        }
+        // handleSizeChange(val) {
+        //     console.log(`每页 ${val} 条`);
+        // },
+        // handleCurrentChange(val) {
+        //     console.log(`当前页: ${val}`);
+        // }
     }
 }
 
 </script>
 <style lang='less' scoped>
+
 </style>

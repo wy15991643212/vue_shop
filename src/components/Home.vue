@@ -96,9 +96,9 @@ export default {
 .home-container {
   height: 100%;
 }
-// .home-main{
-//     height: 600px;
-// }
+.home-main{
+    height: calc(100vh - 77px);
+}
 .el-header {
     background-color: #373d41;
     display: flex;

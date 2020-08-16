@@ -8,6 +8,7 @@ import axios from 'axios'
 import 'element-ui/lib/theme-chalk/index.css'
 // 导入全局样式表
 import './assets/css/global.css'
+import treeTable from 'vue-table-with-tree-grid'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
 // 配置请求根路径
@@ -21,7 +22,7 @@ axios.interceptors.request.use(config => {
 Vue.prototype.$http = axios;
 Vue.use(ElementUI)
 Vue.config.productionTip = false
-
+Vue.component('tree-table', treeTable)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
