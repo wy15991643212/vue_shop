@@ -342,7 +342,7 @@ export default {
       this.setRoleDialogVisible = false;
     },
     // 监听分配角色 对话框关闭
-    setRoleDialogClosed(){
+    setRoleDialogClosed() {
       // 将用户信息和被选中的角色ID 重置为空
       this.userInfo = {};
       this.selectedRoleId = "";
